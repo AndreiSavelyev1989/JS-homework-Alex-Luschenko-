@@ -1,0 +1,27 @@
+html, body {
+    font-family: serif;
+}
+body {
+    margin: 20px;
+    background: rgb(121, 125, 134);
+}
+input{
+    margin: 10px;
+}
+div{
+    margin: 10px;
+}
+.main {
+    background:rgb(152, 160, 144);
+    padding: 10px;
+    margin: 15px;
+    border-radius: 30px;
+}
+
+#out-date, #out-range, #out-range-2, #out-area, #out-inp-area, #out-sel, #out-sel-auto{
+    display: inline;
+    color: rgb(10, 6, 250);
+}
+#btn-sel{
+    display: inline; 
+}
