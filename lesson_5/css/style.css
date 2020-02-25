@@ -1,0 +1,31 @@
+html, body {
+    font-family: serif;
+}
+body {
+    margin: 20px;
+    background: rgb(121, 125, 134);
+}
+input{
+    margin: 10px;
+}
+div{
+    margin: 10px;
+}
+.main {
+    background:rgb(200, 206, 193);
+    padding: 10px;
+    margin: 15px;
+    border-radius: 30px;
+}
+
+#out_1, #out_2, #out_3, #out_4,  #out_6, #out_7, #out_8, #out_9, #out_10, #out_11, #out_12{
+    display: inline;
+    color: rgb(10, 6, 250);
+
+}
+#out_5{
+    color: rgb(10, 6, 250);
+    letter-spacing: 10px;
+}
+
+
