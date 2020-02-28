@@ -1,0 +1,26 @@
+html, body {
+    font-family: serif;
+}
+body {
+    margin: 20px;
+    background: rgb(121, 125, 134);
+}
+input, div, button {
+    margin: 10px;
+}
+h2 {
+    color: rgb(16, 50, 243);
+    text-decoration-line: underline;
+}
+.main {
+    background:rgb(200, 206, 193);
+    padding: 10px;
+    margin: 15px;
+    border-radius: 30px;
+}
+
+.out-1, .out-2, .out-3-1, .out-3-2, .out-4, .out-5, .out-6, .out-7, .out-8, .out-9, .out-10, .out-14, .out-15, .out-16, .out-17 {
+    display: inline;
+    color: rgb(10, 6, 250);
+}
+

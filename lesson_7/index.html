@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Lesson 7</title>
+</head>
+
+<body>
+
+    <div class="main">
+        <p>Task 1</p>
+        <p><b>Напишите функцию t1, которая при нажатии кнопки выводит в out-1 переменную a1.</b></p>
+        <pre>
+            let a1 = 8;
+            function t1() {
+
+            }
+            document.querySelector(‘.b-1’).onclick = t1;
+        </pre>
+        <button class="b-1">Press</button><br>
+        <span>Вывод:</span>
+        <div class="out-1"></div>
+        <hr>
+    </div>
+
+
+    <div class="main">
+        <p>Task 2</p>
+        <p><b>Изменим задачу 1. Сейчас она только выводит переменную в заранее заданный блок. Давайте сделаем так, чтобы
+                функция, была более гибкой. Пусть теперь функция t2 возвращает переменную a2. Поскольку функция
+                возвращает переменную, то имя функции со скобками (вызов функции) можно встраивать в выражения. Обратите
+                внимание, как изменился вызов функции.</b></p>
+        <pre>
+            let a2 = 8;
+            function t2() {
+
+            }
+            document.querySelector(‘.b-2’).onclick =function() {
+                document.querySelector(‘.out-2’).textContent = f2();
+            }
+        </pre>
+        <button class="b-2">Press</button><br>
+        <span>Вывод:</span>
+        <div class="out-2"></div>
+        <hr>
+    </div>
+
+
+    <div class="main">
+        <p>Task 3</p>
+        <p><b>Наша предыдущая функция, сильно все еще зависима от внешних переменных. Давайте сделаем ее более
+                универсальной. Пусть функция t3 принимает 2 параметра и выводит их произведение. Допишите код функции
+                так, чтобы она возвращала произведение двух чисел, переданных ей в качестве параметра a, b. Протестируем
+                функцию на двух примерах, с помощью кнопок b3-1 и b3-2.</b></p>
+        <pre>
+          function t3(a,b) {
+
+            }
+            document.querySelector(‘.b-3-1’).onclick =function() {
+                document.querySelector(‘.out-3-1’).textContent = t3(3,4);
+            }
+            document.querySelector(‘.b-3-2’).onclick = function(){
+                document.querySelector(‘.out-3-2’).textContent = t3(5,6);
+            }
+        </pre>
+        <button class="b-3-1">Press</button><br>
+        <span>Вывод:</span>
+        <div class="out-3-1"></div>
+        <hr>
+        <button class="b-3-2">Press</button><br>
+        <span>Вывод:</span>
+        <div class="out-3-2"></div>
+        <hr>
+    </div>
+
+
+    <div class="main">
+        <p>Task 4</p>
+        <p><b>Напишите функцию t4 которая принимает ваш год рождения и вычисляет ваш возраст.</b></p>
+        <input type="number" class="inp-4" placeholder="Введите год рождения">
+        <button class="b-4">Press</button><br>
+        <span>Вывод:</span>
+        <div class="out-4"></div>
+        <hr>
+    </div>
+
+
+    <div class="main">
+        <p>Task 5</p>
+        <p><b>Напишите функцию t5, которая принимает ваше имя в качестве параметра и возвращает строку Hello name, где
+                name - принятое в качестве параметра имя.</b></p>
+        <input type="text" class="inp-5" placeholder="Введите ваше имя">
+        <button class="b-5">Press</button><br>
+        <span>Вывод:</span>
+        <div class="out-5"></div>
+        <hr>
+    </div>
+
+
+    <div class="main">
+        <p>Task 6</p>
+        <p><b>Напишите функцию t6, которая принимает 2 числа и возвращает случайное целое число от первого до второго
+                принятого параметра.</b></p>
+        <input type="number" class="inp-6-1" placeholder="Введите первое число">
+        <input type="number" class="inp-6-2" placeholder="Введите второе число">
+        <button class="b-6">Press</button><br>
+        <span>Вывод:</span>
+        <div class="out-6"></div>
+        <hr>
+    </div>
+
+
+    <div class="main">
+        <p>Task 7</p>
+        <p><b>Напишите функцию t7, которая возвращает случайный цвет в формате rgb(x,y,z) (строка). Где x,y,z -
+                случайные числа в диапазоне [0, 255].</b></p>
+        <button class="b-7">Press</button><br>
+        <span>Вывод:</span>
+        <div class="out-7"></div>
+        <hr>
+    </div>
+
+
+    <div class="main">
+        <p>Task 8</p>
+        <p><b>Напишите функцию t8, которая принимает строку в качестве параметра и возвращает результат с очищенными
+                пробелами в начале и вконце строки. Т.е. принимает _hello_ (где знак _ символизирует пробел), а
+                возвращает hello. Для удаления пробелов - используйте trim.</b></p>
+        <input type="text" class="inp-8">
+        <button class="b-8">Press</button><br>
+        <span>Вывод:</span>
+        <div class="out-8"></div>
+        <hr>
+    </div>
+
+
+    <div class="main">
+        <p>Task 9</p>
+        <p><b>Напишите функцию t9, которая принимает число и возвращает true, если число четное, и false если не
+                четное.</b></p>
+        <input type="number" class="inp-9">
+        <button class="b-9">Press</button><br>
+        <span>Вывод:</span>
+        <div class="out-9"></div>
+        <hr>
+    </div>
+
+
+    <div class="main">
+        <p>Task 10</p>
+        <p><b>Создайте функцию t10, которая принимает 2 числа и возвращает большее из них. В случае равенства - любое из
+                чисел.</b></p>
+        <input type="number" class="inp-10-1">
+        <input type="number" class="inp-10-2">
+        <button class="b-10">Press</button><br>
+        <span>Вывод:</span>
+        <div class="out-10"></div>
+        <hr>
+    </div>
+
+    <h2>Задачи на прокачку:</h2>
+
+    <div class="main">
+        <p>Task 1</p>
+        <p><b>Создайте функцию (именнованную), которая при клике на кнопке выводит в консоль ваше имя.</b></p>
+        <input type="text" class="inp-11">
+        <button class="b-11">Press</button><br>
+        <hr>
+    </div>
+
+
+    <div class="main">
+        <p>Task 3</p>
+        <p><b>Создайте именнованную функцию, которая принимает параметр число и выводит его значение умноженное на 10 в консоль. Запустите выполнение функции. Убедитесь, что она работает. Теперь создайте кнопку и добавьте на нее событие onclick которое вызывает данную функцию с параметром.
+
+            Если вы напишите, подобный синтаксис elem.onclick = myFunc(11), то увидите, что данная функция - выполняется сразу при загрузке страницы! Действительно, ведь мы поставили скобки. Как передать параметр и не запустить функцию сразу? Довольно хитро:
+            
+            elem.onclick = function(){
+                myFunc(22);
+            }
+            Т.е. использовать обертку из анонимной функции.</b></p>
+        <button class="b-12">Press</button><br>
+        <hr>
+    </div>
+
+
+    <div class="main">
+        <p>Task 4</p>
+        <p><b>Создайте кнопку и функцию. При нажатии кнопки, функция окрашивает данную кнопку в background: red.</b></p>
+        <button class="b-13">Press</button><br>
+        <hr>
+    </div>
+
+
+    <div class="main">
+        <p>Task 8</p>
+        <p><b>Создайте функцию, которая возвращает случайное число от 1 до 10. По случайным числам читаем все здесь и задаем вопросы в чате.</b></p>
+        <button class="b-14">Press</button><br>
+        <span>Вывод:</span>
+        <div class="out-14"></div>
+        <hr>
+    </div>
+
+
+    <div class="main">
+        <p>Task 11</p>
+        <p><b>Создайте функцию f11, которая возвращает число 5. Создайте функцию которая принимает 2 параметра и перемножает их между собой. В качестве первого параметра передайте f11().</b></p>
+        <button class="b-15">Press</button><br>
+        <span>Вывод:</span>
+        <div class="out-15"></div>
+        <hr>
+    </div>
+
+
+    <div class="main">
+        <p>Task 12</p>
+        <p><b>Создайте функцию toNum, которая принимает 1 параметр - объект input, и возвращает введенное в него значение преобразованное в число.</b></p>
+        <input type="text" class="inp-16">
+        <button class="b-16">Press</button><br>
+        <span>Вывод:</span>
+        <div class="out-16"></div>
+        <hr>
+    </div>
+
+
+    <div class="main">
+        <p>Task 13</p>
+        <p><b>Создайте функцию emptyInput - которая принимает в качестве параметра input, удаляет все пробелы введенные до и после значения (trim), и проверяет - если результат равен пустой строке - то возвращает false, если нет - то сам результат с обрезанными пробелами.</b></p>
+        <input type="text" class="inp-17">
+        <button class="b-17">Press</button><br>
+        <span>Вывод:</span>
+        <div class="out-17"></div>
+        <hr>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
